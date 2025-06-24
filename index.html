@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>João Márcio | Produtor Musical</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+    }
+    header {
+      background: linear-gradient(to right, #f2709c, #ff9472);
+      color: white;
+      padding: 60px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .title {
+      max-width: 60%;
+    }
+    .title h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .title p {
+      font-size: 1.5em;
+    }
+    .carousel {
+      max-width: 35%;
+    }
+    .carousel img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .buttons {
+      margin: 20px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      transition: background 0.3s;
+    }
+    .instagram { background: #E4405F; }
+    .spotify { background: #1DB954; }
+    .whatsapp { background: #25D366; }
+    .instagram:hover { background: #c23350; }
+    .spotify:hover { background: #168f3e; }
+    .whatsapp:hover { background: #1ca652; }
+    .release {
+      padding: 30px;
+      background: white;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+    }
+  </style>
+  <script>
+    let current = 0;
+    function rotateCarousel() {
+      const images = ["Foto2.jpg", "Foto3.jpg", "Foto4.jpg"];
+      current = (current + 1) % images.length;
+      document.getElementById('carousel-img').src = images[current];
+    }
+    setInterval(rotateCarousel, 3000);
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="title">
+    <h1>João Márcio</h1>
+    <p>Produtor Musical</p>
+  </div>
+  <div class="carousel">
+    <img id="carousel-img" src="Foto2.jpg" alt="Carrossel de Fotos">
+  </div>
+</header>
+
+<div class="buttons">
+  <a class="instagram" href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a>
+  <a class="spotify" href="https://open.spotify.com/artist/1XKTU3CNVTvHc7n5u5jXLr" target="_blank">Spotify</a>
+  <a class="whatsapp" href="https://wa.me/5531999999999" target="_blank">WhatsApp</a>
+</div>
+
+<div class="release">
+  João Márcio é um talentoso produtor musical, saxofonista e gestor artístico que vem se destacando no cenário musical com sua sensibilidade única e versatilidade sonora. Ao longo de sua trajetória, tem se dedicado não apenas à criação e produção de músicas autorais e versões exclusivas, mas também à valorização de novos talentos e à promoção de eventos que conectam arte e propósito. Com uma abordagem inovadora, João alia excelência técnica a uma profunda conexão espiritual, impactando públicos diversos com sua arte.
+</div>
+
+</body>
+</html>
