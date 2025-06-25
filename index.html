@@ -163,7 +163,33 @@ OBRAS, FONOGRAMAS, Distribuição Digital e Consultoria em geral.<br><br>
 
 <section id="galeria">
   <h2>Galeria</h2>
-  <div id="gallery-container" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1100px;margin:auto;">
+  
+<script>
+const grupos = [
+  ["Foto JB2.jpg", "Foto Jm Rec.jpg", "Foto Jm5.jpeg", "Foto Show.jpg"],
+  ["Foto Jm.png", "Foto JB1.jpg", "Foto dq2.jpg", "Foto Juju Midas.JPG"],
+  ["Foto ari.jpeg", "Foto JM AERO.jpg", "Foto JM FLAUTA.jpeg", "Foto Jm6.jpeg"]
+];
+let indice = 0;
+function carregarGaleria() {
+  const container = document.getElementById("gallery-container");
+  container.innerHTML = "";
+  grupos[indice].forEach(foto => {
+    const img = document.createElement("img");
+    img.src = "img/" + foto;
+    img.alt = foto;
+    img.className = "gallery-img";
+    img.style.cssText = "width:100%;height:120px;border-radius:8px;object-fit:cover;cursor:pointer;";
+    img.onclick = () => window.open(img.src, "_blank");
+    container.appendChild(img);
+  });
+  indice = (indice + 1) % grupos.length;
+}
+window.onload = carregarGaleria;
+setInterval(carregarGaleria, 10000);
+</script>
+
+<div id="gallery-container" style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:1100px;margin:auto;">
     <img src="img/Foto ari.jpeg" alt="Show com Ariane - 2018" class="gallery-img" style="width:100%;height:120px;border-radius:8px;object-fit:cover;">
     <img src="img/Foto dq1.jpg" alt="Com David Quinlan - 2017" class="gallery-img" style="width:100%;height:120px;border-radius:8px;object-fit:cover;">
     <img src="img/Foto dq2.jpg" alt="Com David Quinlan - 2017" class="gallery-img" style="width:100%;height:120px;border-radius:8px;object-fit:cover;">
@@ -173,7 +199,14 @@ OBRAS, FONOGRAMAS, Distribuição Digital e Consultoria em geral.<br><br>
 <footer style="background:#000;padding:40px 20px;text-align:center;color:white;">
 
   <p><strong style="font-size:1.1rem;">João Márcio – (31) 99306-3266 | jmarciocontato@gmail.com</strong></p>
-  <div style="margin-top:20px;"><a href="https://www.facebook.com/joaomarcio.basso" target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Facebook</a>
+  
+<div style="margin-top:20px;">
+  <a href="https://www.facebook.com/joaomarcio.basso" target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Facebook</a>
+  <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Instagram</a>
+  <a href="https://www.instagram.com/joycebasso/" target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Joyce Basso</a>
+  <a href="https://www.instagram.com/powerchurch_oficial/" target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Power Church</a>
+</div>
+ target="_blank" style="display:inline-block;margin:5px;padding:12px 20px;background:#333;color:white;text-decoration:none;border-radius:6px;font-weight:bold;font-size:0.95rem;letter-spacing:0.5px;">Facebook</a>
     <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a> |
     <a href="https://www.instagram.com/joycebasso/" target="_blank">Joyce Basso</a> |
     <a href="https://www.instagram.com/powerchurch_oficial/" target="_blank">Power Church</a>
