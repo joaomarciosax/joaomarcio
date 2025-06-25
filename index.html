@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>João Márcio | Produtor Musical</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Márcio - Produtor Musical</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #111;
+      background: black;
       color: white;
     }
     header {
-      background-image: url('img/IMG_0248.JPEG');
+      background: url('img/IMG_0248.JPEG') no-repeat center center;
       background-size: cover;
-      background-position: center;
       height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-left: 5%;
+      text-align: center;
+      padding-top: 150px;
     }
     header h1 {
-      font-size: 4em;
+      font-size: 4rem;
       margin: 0;
     }
     header p {
-      font-size: 1.5em;
+      font-size: 1.5rem;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons a {
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #444;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
     }
     nav {
-      margin-top: 20px;
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 10px;
+      text-align: center;
     }
     nav a {
       color: white;
-      margin-right: 15px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
-      background: #333;
-      padding: 10px 15px;
-      border-radius: 5px;
     }
     section {
-      padding: 40px 20px;
       max-width: 900px;
       margin: auto;
+      padding: 50px 20px;
     }
     .carousel {
       display: flex;
@@ -52,14 +62,14 @@
       margin-top: 20px;
     }
     .carousel img {
-      max-height: 200px;
+      height: 180px;
       border-radius: 10px;
     }
     footer {
-      background: #222;
+      background: #111;
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -68,58 +78,74 @@
 <header>
   <h1>João Márcio</h1>
   <p>Produtor Musical</p>
-  <nav>
-    <a href="#bio">BIO</a>
-    <a href="#office">JM OFFICE</a>
-    <a href="#agenda">AGENDA</a>
-    <a href="#contato">CONTATO</a>
-    <a href="https://instagram.com/joaomarciosax" target="_blank">Instagram</a>
+  <div class="buttons">
+    <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a>
     <a href="https://open.spotify.com/intl-pt/artist/5CXsuiTk9p01fhz3qYvLe4?si=sD3dEUpRQx2yZhGcYTf58Q" target="_blank">Spotify</a>
     <a href="https://wa.me/5531993063266" target="_blank">WhatsApp</a>
-  </nav>
+  </div>
 </header>
 
+<nav>
+  <a href="#bio">BIO</a>
+  <a href="#office">JM OFFICE</a>
+  <a href="#agenda">AGENDA</a>
+  <a href="#contato">CONTATO</a>
+</nav>
+
 <section id="bio">
-  <h2>Bio</h2>
-  <p>
-    João Márcio é um talentoso produtor musical, arranjador e multi-instrumentista mineiro, que há mais de duas décadas atua na produção de álbuns, trilhas, jingles e eventos ao vivo. Com um estilo versátil que transita entre o gospel, o pop, o instrumental e o regional, João já trabalhou com diversos artistas independentes e projetos culturais pelo Brasil. Reconhecido por sua sensibilidade musical, domínio técnico e excelência na entrega, ele também é saxofonista, tecladista e engenheiro de som, atuando...
-  </p>
+  <h2>BIO</h2>
+  <p>Pastor de Música da Power Church, Produtor Musical e Empresário. Já produziu mais de 500 trabalhos entre CDs, EPs, Singles, Jingles e etc. Atua como Produtor Musical e consultoria artística no MIX 360 em Belo Horizonte. Seu escritório de Backoffice para artistas cuida toda documentação e distribuição dos fonogramas, abastecendo o mercado com bons produtos diariamente. Já trabalhou com alguns artistas brasileiros e, por um tempo, acompanhou o pastor e cantor David Quinlan como tecladista...</p>
 </section>
 
 <section id="office">
   <h2>JM OFFICE</h2>
-  <p>
-    O JM OFFICE é uma iniciativa de João Márcio que oferece suporte completo para artistas, incluindo produção musical, arranjos, gravações, consultoria de carreira, criação de identidade visual, distribuição digital e assessoria técnica para eventos ao vivo.
-  </p>
+  <p><strong>Soluções para artistas independentes:</strong><br>
+  OBRAS, FONOGRAMAS, DISTRIBUIÇÃO DIGITAL e CONSULTORIA EM GERAL.<br>
+  Sub-conta, Dashboard, Spotify for Artist, Shared, Pitching, Sem retenção de royalties.</p>
+  <img src="img/Foto Jm Office.jpg" alt="JM Office" style="width:100%;margin-top:20px;border-radius:10px;">
 </section>
 
 <section id="agenda">
-  <h2>Agenda</h2>
-  <p>Para consultar datas e eventos, acesse a agenda oficial ou entre em contato diretamente.</p>
+  <h2>AGENDA</h2>
+  <table style="width:100%;border-collapse:collapse;">
+    <tr><th style="text-align:left;">Local</th><th style="text-align:left;">Data</th><th style="text-align:left;">Evento</th></tr>
+    <tr><td>Belo Horizonte</td><td>15/07/2025</td><td>Power Conference</td></tr>
+    <tr><td>Ipatinga</td><td>22/07/2025</td><td>Jazz Festival</td></tr>
+    <tr><td>Bom Sucesso</td><td>05/08/2025</td><td>Show com Joyce Basso</td></tr>
+  </table>
 </section>
 
 <section id="contato">
-  <h2>Contato</h2>
-  <p>📧 E-mail: jmarciocontato@gmail.com</p>
-  <p>📱 WhatsApp: <a href="https://wa.me/5531993063266" target="_blank" style="color:#0f0;">Clique aqui para conversar</a></p>
+  <h2>CONTATO</h2>
+  <form action="https://formsubmit.co/jmarciocontato@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Seu nome" required><br><br>
+    <input type="email" name="email" placeholder="Seu e-mail" required><br><br>
+    <input type="tel" name="phone" placeholder="Seu telefone"><br><br>
+    <textarea name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+  <img src="img/Foto Jm3.jpg" alt="Contato" style="width:100%;margin-top:20px;border-radius:10px;">
 </section>
 
-<section id="fotos">
-  <h2>Fotos</h2>
+<section id="galeria">
+  <h2>Galeria</h2>
   <div class="carousel">
-    <img src="img/Foto Jm.png" alt="Foto JM">
-    <img src="img/Foto JM KEY VM.jpg" alt="Estúdio">
-    <img src="img/Foto Show.jpg" alt="Ao vivo">
+    <img src="img/Foto Show.jpg" alt="Show">
+    <img src="img/Foto dq1.jpg" alt="Com David Quinlan">
+    <img src="img/Foto Jm.png" alt="João Márcio">
     <img src="img/Foto perfil.jpeg" alt="Perfil">
-    <img src="img/Foto JM SENA.jpeg" alt="Sena">
-    <img src="img/Foto Jm5.jpeg" alt="Teclado">
-    <img src="img/Foto JB2.jpg" alt="Show 2">
-    <img src="img/Foto Juju Midas.JPG" alt="Juju no estúdio">
+    <img src="img/Foto sax.png" alt="Saxofone">
   </div>
 </section>
 
 <footer>
-  <p>© 2025 João Márcio · Todos os direitos reservados</p>
+  <p>João Márcio – (31) 99306-3266 | jmarciocontato@gmail.com</p>
+  <p>
+    <a href="https://www.facebook.com/joaomarcio.basso" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a> |
+    <a href="https://www.instagram.com/joycebasso/" target="_blank">Joyce Basso</a> |
+    <a href="https://www.instagram.com/powerchurch_oficial/" target="_blank">Power Church</a>
+  </p>
 </footer>
 
 </body>
