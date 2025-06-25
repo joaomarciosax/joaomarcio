@@ -12,9 +12,9 @@
       color: white;
     }
     header {
-      background: url('img/IMG_0248.JPEG') no-repeat top center;
+      background: url('img/IMG_0248.jpg') no-repeat top center;
       background-size: cover;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -27,20 +27,6 @@
     }
     header p {
       font-size: 1.5rem;
-    }
-    .buttons {
-      margin-top: 40px;
-    }
-    .buttons a {
-      display: inline-block;
-      margin-right: 10px;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background: #444;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
     }
     nav {
       position: sticky;
@@ -71,6 +57,20 @@
       height: 180px;
       border-radius: 10px;
     }
+    .social-buttons {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .social-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
     footer {
       background: #111;
       padding: 40px 20px;
@@ -84,11 +84,6 @@
 <header>
   <h1>João Márcio</h1>
   <p>Produtor Musical</p>
-  <div class="buttons">
-    <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a>
-    <a href="https://open.spotify.com/intl-pt/artist/5CXsuiTk9p01fhz3qYvLe4?si=sD3dEUpRQx2yZhGcYTf58Q" target="_blank">Spotify</a>
-    <a href="https://wa.me/5531993063266" target="_blank">WhatsApp</a>
-  </div>
 </header>
 
 <nav>
@@ -100,14 +95,28 @@
 
 <section id="bio">
   <h2>BIO</h2>
-  <p>Pastor de Música da Power Church, Produtor Musical e Empresário. Já produziu mais de 500 trabalhos entre CDs, EPs, Singles, Jingles e etc. Atua como Produtor Musical e consultoria artística no MIX 360 em Belo Horizonte. Seu escritório de Backoffice para artistas cuida toda documentação e distribuição dos fonogramas, abastecendo o mercado com bons produtos diariamente. Já trabalhou com alguns artistas brasileiros e, por um tempo, acompanhou o pastor e cantor David Quinlan como tecladista...</p>
+  <p>Pastor de Música da Power Church, Produtor Musical e Empresário.  
+Já produziu mais de 500 trabalhos entre CDs, EPs, Singles, Jingles e etc. Atua como Produtor Musical e consultoria artística no MIX 360 em Belo Horizonte. Seu escritório de Backoffice para artistas cuida toda documentação e distribuição dos fonogramas, abastecendo o mercado com bons produtos diariamente. 
+Já trabalhou com alguns artistas brasileiros e, por um tempo, acompanhou o pastor e cantor David Quinlan como tecladista, acompanhou a cantora Arianne na turnê “Como Cantavam Nossos Pais” pela Sony, como free-lancer acompanhou André Valadão, Eli Soares, Marcus Sales, e muitos outros, além de produções e projetos de vários artistas independentes. 
+Hoje, se dedica em cuidar por completo da carreira da sua esposa Joyce Basso e de alguns artistas específicos. 
+“Estar no altar com a minha família, cumprindo o propósito de Deus e levando isso ao maior número de pessoas. Essa é minha maior realização” 
+Formação acadêmica: Licenciatura em Música pela Unimes Graduado em Processos Gerenciais Especializações: Pro Tools, Produção Musical, Mixagem, Música e Tecnologia.
+  </p>
 </section>
 
 <section id="office">
   <h2>JM OFFICE</h2>
   <p><strong>Soluções para artistas independentes:</strong><br>
-  OBRAS, FONOGRAMAS, DISTRIBUIÇÃO DIGITAL e CONSULTORIA EM GERAL.<br>
-  Sub-conta, Dashboard, Spotify for Artist, Shared, Pitching, Sem retenção de royalties.</p>
+OBRAS, FONOGRAMAS, Distribuição Digital e Consultoria em geral.<br><br>
+*Operacional / Suporte total / Transparência<br>
+*Sub-conta e painel de controle (dashboard)<br>
+*Controle <strong>total do artista</strong> 📊<br>
+*Suporte Spotify for Artist 🛟<br>
+*Aplicação de Shared 🤝<br>
+*Envio do pitching 🚀<br>
+<strong>⚠️ Não retemos nenhum percentual de royalties.</strong><br>
+👍 Tudo pelo painel de distribuição do próprio artista.
+  </p>
   <img src="img/Foto Jm Office.jpg" alt="JM Office" style="width:100%;margin-top:20px;border-radius:10px;">
 </section>
 
@@ -133,15 +142,10 @@
   <img src="img/Foto Jm3.jpg" alt="Contato" style="width:100%;margin-top:20px;border-radius:10px;">
 </section>
 
-<section id="galeria">
-  <h2>Galeria</h2>
-  <div class="carousel">
-    <img src="img/Foto Show.jpg" alt="Show">
-    <img src="img/Foto dq1.jpg" alt="Com David Quinlan">
-    <img src="img/Foto Jm.png" alt="João Márcio">
-    <img src="img/Foto perfil.jpeg" alt="Perfil">
-    <img src="img/Foto sax.png" alt="Saxofone">
-  </div>
+<section class="social-buttons">
+  <a href="https://www.instagram.com/joaomarcio.jm/" target="_blank">Instagram</a>
+  <a href="https://open.spotify.com/intl-pt/artist/5CXsuiTk9p01fhz3qYvLe4?si=sD3dEUpRQx2yZhGcYTf58Q" target="_blank">Spotify</a>
+  <a href="https://wa.me/5531993063266" target="_blank">WhatsApp</a>
 </section>
 
 <footer>
